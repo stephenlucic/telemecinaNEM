@@ -11,7 +11,20 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles.css">
-    
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar/index.global.min.js'></script>
+    <script>
+
+      document.addEventListener('DOMContentLoaded', function() {
+        const calendarEl = document.getElementById('calendar')
+        const calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth',
+          locale:'es'
+        })
+
+        calendar.render()
+      })
+
+    </script>
   </head>
   <body class="bodybg">
 
@@ -49,6 +62,12 @@
       
       
 
+      <div class="card mx-5 mt-4">
+        <div class="card-body">
+          <div id='calendar' class="fc-toolbar-title" ></div>
+        </div>
+      </div>
+      
 
       <script src="./assets/boot.js"></script>
   </body>

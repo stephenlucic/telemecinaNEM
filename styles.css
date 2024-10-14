@@ -7,3 +7,12 @@
     margin: 0; /* Elimina los márgenes del body */
     color: black; /* Cambia el color del texto a blanco para que contraste con el fondo */
 }
+
+#calendar {
+    max-width: 600px;  /* Ajusta el ancho */
+    margin: 0 auto;    /* Centra el calendario */
+  }
+
+  .fc-toolbar-title {
+    font-size: 14px; /* Cambia el tamaño según lo que necesites */
+  }
