@@ -10,6 +10,9 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -69,5 +72,16 @@
       </div>
     </div>
     <script src="./assets/boot.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            Swal.fire({
+                title: "Bienvenido a NEM",
+                text: "Esta página es una maqueta de prueba, por lo que no es necesario registrarse por ahora. Agradecemos que puedan explorar el sitio y compartir su opinión a través de nuestro Instagram @nemtelemedicina. Su feedback es valioso para llevar adelante este proyecto. ¡Gracias por su visita!",
+                icon: "info"
+            });
+        });
+    </script>
   </body>
 </html>
