@@ -99,3 +99,16 @@ body {
 }
 
 
+.carousel {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra del carrusel */
+}
+
+.card {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra para resaltar */
+  border-radius: 10px; /* Bordes redondeados */
+}
+h1 {
+  color: black; /* Color del texto del título */
+  text-align: center; /* Centra el texto */
+  margin-bottom: 30px; /* Espacio debajo del título */
+}
