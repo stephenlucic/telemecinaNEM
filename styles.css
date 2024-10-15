@@ -1,18 +1,81 @@
-.bodybg {
+/*.bodybg {
     background-image: url('https://i.pinimg.com/originals/3a/79/ca/3a79cac1ef760b6cd852cf6ca50fac20.jpg'); /* Cambia por la URL de tu imagen */
-    background-size: cover; /* La imagen cubre toda la pantalla */
-    background-position: center; /* Centra la imagen */
+    /*background-size: cover; /* La imagen cubre toda la pantalla */
+    /*background-position: center; /* Centra la imagen */
    /* background-repeat: no-repeat; /* No repite la imagen */
-    height: 100vh; /* Hace que la altura del body ocupe toda la pantalla */
-    margin: 0; /* Elimina los márgenes del body */
-    color: black; /* Cambia el color del texto a blanco para que contraste con el fondo */
+    /*height: 100vh; /* Hace que la altura del body ocupe toda la pantalla */
+    /*margin: 0; /* Elimina los márgenes del body */
+    /*color: black; /* Cambia el color del texto a blanco para que contraste con el fondo 
+}*/
+
+/*#calendar {
+    max-width: 600px;  /* Ajusta el ancho */
+    /*margin: 0 auto;    /* Centra el calendario 
+  }*/
+
+  /*.fc-toolbar-title {
+    font-size: 14px; /* Cambia el tamaño según lo que necesites 
+  }*/
+
+  /* styles.css */
+
+/* Estilos del body */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#calendar {
-    max-width: 600px;  /* Ajusta el ancho */
-    margin: 0 auto;    /* Centra el calendario */
-  }
+html, body {
+  height: 100%;
+}
 
-  .fc-toolbar-title {
-    font-size: 14px; /* Cambia el tamaño según lo que necesites */
-  }
+body {
+  padding-bottom: 60px; /* Espacio para la barra de navegación */
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Imagen de fondo */
+.background-image {
+  position: fixed; /* Cambiar a fixed para que la imagen cubra toda la pantalla */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/imagenes/fondo.jpg'); /* URL de la imagen de fondo */
+  background-size: cover; /* Asegúrate de que cubra todo */
+  background-position: center; /* Centramos la imagen */
+  background-repeat: no-repeat; /* No repetir la imagen */
+  opacity: 0.5; /* Ajusta la opacidad de la imagen */
+  z-index: -1; /* Asegura que la imagen esté detrás del contenido */
+}
+
+/* Contenido de la página */
+.content {
+  position: relative;
+  padding-bottom: 100px; /* Elimina padding-bottom */
+  min-height: 100vh; /* Asegura que el contenedor tenga al menos la altura de la ventana */
+}
+
+.navbar-bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #E0F7FA; /* Fondo celeste clarito */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.navbar-bottom a {
+  color: #6c757d;
+  font-size: 1.5rem;
+}
+
+.navbar-bottom a.active {
+  color: #007bff; /* Color cuando el icono está activo */
+}
+
+/* Margen extra en la parte superior para secciones */
+.section {
+  margin-bottom: 40px;
+}
