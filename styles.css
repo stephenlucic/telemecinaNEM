@@ -79,3 +79,23 @@ body {
 .section {
   margin-bottom: 40px;
 }
+
+.carousel-inner img {
+  width: 100%; /* Asegura que la imagen ocupa todo el ancho del contenedor */
+  height: 400px; /* Ajusta la altura a un tamaño fijo */
+  object-fit: cover; /* Mantiene la proporción y cubre el área del contenedor */
+}
+
+.carousel-caption h5 {
+  color: black; /* Cambia el color del texto a negro */
+  font-size: 1.5rem; /* Ajusta el tamaño de la fuente para el título */
+  text-shadow: 0 0 5px white, 0 0 10px white; /* Borde blanco suave alrededor del texto */
+}
+
+.carousel-caption p {
+  color: black; /* Cambia el color del texto a negro */
+  font-size: 1.2rem; /* Ajusta el tamaño de la fuente para la descripción */
+  text-shadow: 0 0 5px white, 0 0 10px white; /* Borde blanco suave alrededor del texto */
+}
+
+
